@@ -21,8 +21,27 @@ html {
 body {
   height: 100vh;
   width: 100%;
-  background-image: linear-gradient(to right, #f0f0f0 1px, transparent 1px),
-    linear-gradient(to bottom, #f0f0f0 1px, transparent 1px),
-    radial-gradient(circle 800px at 100% 200px, #d5c5ff, transparent);
-  background-size: 96px 64px, 96px 64px, 100% 100%;
+  background-color: #0f0f0f;
+  background-image: repeating-linear-gradient(
+      60deg,
+      rgba(255, 0, 100, 0.2) 0,
+      rgba(255, 0, 100, 0.2) 1px,
+      transparent 1px,
+      transparent 22px
+    ),
+    repeating-linear-gradient(
+      -60deg,
+      rgba(0, 255, 200, 0.15) 0,
+      rgba(0, 255, 200, 0.15) 1px,
+      transparent 1px,
+      transparent 22px
+    ),
+    repeating-linear-gradient(
+      0deg,
+      rgba(255, 0, 100, 0.2) 0,
+      rgba(255, 0, 100, 0.2) 1px,
+      transparent 1px,
+      transparent 22px
+    );
+  background-size: 44px 44px;
 }
